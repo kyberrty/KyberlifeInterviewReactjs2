@@ -1,8 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
-import Home from './Home'
 import { createTheme, ThemeProvider } from '@mui/material'
+import Home from './Home'
+import Task1 from './task1/Task1'
+import './main.css'
 
 const theme = createTheme({
   typography: {
@@ -24,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}></Route>
+          <Route path='/task1' element={<Task1 />}></Route>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
