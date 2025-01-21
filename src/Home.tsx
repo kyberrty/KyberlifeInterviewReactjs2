@@ -1,6 +1,6 @@
 import { List, ListItem, Typography } from '@mui/material'
-import Layout from './Layout'
 import { Link } from 'react-router'
+import Layout from './Layout'
 
 const Home = () => {
   return (
@@ -15,29 +15,31 @@ const Home = () => {
       <Typography>
         Click the links below to get started.
       </Typography>
-      <List>
-        <ListItem>
-          <Link to='/task1'>
-            <Typography>
-              Task 1: List filtering
-            </Typography>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link to='/task2'>
-            <Typography>
-              Task 2: Data fetching
-            </Typography>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link to='/task3'>
-            <Typography>
-              Task 3
-            </Typography>
-          </Link>
-        </ListItem>
-      </List>
+      <Typography>
+        <ol>
+          <li>
+            <Link to='/task1'>
+              <Typography>
+                Task 1: List filtering
+              </Typography>
+            </Link>
+          </li>
+          <li>
+            <Link to='/task2'>
+              <Typography>
+                Task 2: Data fetching
+              </Typography>
+            </Link>
+          </li>
+          <li>
+            <Link to='/task3'>
+              <Typography>
+                Task 3: Form validation
+              </Typography>
+            </Link>
+          </li>
+        </ol>
+      </Typography>
     </Layout>
   )
 }

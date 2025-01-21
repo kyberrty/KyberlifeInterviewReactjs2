@@ -33,10 +33,18 @@ const TaskDescription = () => {
         Use the following API endpoint to fetch the data:
       </Typography>
       <Typography>
-        <code>https://jsonplaceholder.typicode.com/posts/1</code> (for the first post)
-      </Typography>
-      <Typography>
-        <code>https://jsonplaceholder.typicode.com/posts/2</code> (for the second post)
+        <ol>
+          <li>
+            <Typography>
+              <a href='https://jsonplaceholder.typicode.com/posts/1'>https://jsonplaceholder.typicode.com/posts/1</a> (for the first post)
+            </Typography>
+          </li>
+          <li>
+            <Typography>
+              <a href='https://jsonplaceholder.typicode.com/posts/2'>https://jsonplaceholder.typicode.com/posts/2</a> (for the second post)
+            </Typography>
+          </li>
+        </ol>
       </Typography>
     </>
   )
