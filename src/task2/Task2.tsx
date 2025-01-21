@@ -1,6 +1,13 @@
 import { Divider, Stack, Typography } from "@mui/material"
 import Layout from "../Layout"
 
+type Post = {
+  userId: number
+  id: number
+  title: string
+  body: string
+}
+
 const Task2 = () => {
   return (
     <Layout>

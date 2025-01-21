@@ -34,7 +34,7 @@ const Home = () => {
           <li>
             <Link to='/task3'>
               <Typography>
-                Task 3: Form validation
+                Task 3: Form validation (if time permits)
               </Typography>
             </Link>
           </li>

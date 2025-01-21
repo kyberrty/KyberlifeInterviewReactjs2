@@ -1,7 +1,7 @@
 import { Divider, Stack, TextField, Typography } from "@mui/material"
 import Layout from "../Layout"
 
-export type Item = {
+type Item = {
   name: string
   description: string
   quantity: number
@@ -32,7 +32,43 @@ const data: Item[] = [
     description: 'A fruit that is in bunches',
     quantity: 2,
     price: 3.0
-  }
+  },
+  {
+    name: 'Durian',
+    description: 'A fruit that is spikey',
+    quantity: 1,
+    price: 5.0
+  },
+  {
+    name: 'Watermelon',
+    description: 'A fruit that is juicy',
+    quantity: 1,
+    price: 4.0
+  },
+  {
+    name: 'Pineapple',
+    description: 'A fruit that is prickly',
+    quantity: 2,
+    price: 3.5
+  },
+  {
+    name: 'Mango',
+    description: 'A fruit that is sweet',
+    quantity: 4,
+    price: 2.5
+  },
+  {
+    name: 'Papaya',
+    description: 'A fruit that is orange',
+    quantity: 3,
+    price: 2.0
+  },
+  {
+    name: 'Dragonfruit',
+    description: 'A fruit that is exotic',
+    quantity: 1,
+    price: 6.0
+  },
 ]
 
 const Task1 = () => {
