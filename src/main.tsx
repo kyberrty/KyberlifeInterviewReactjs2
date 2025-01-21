@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import { createTheme, ThemeProvider } from '@mui/material'
 import Home from './Home'
 import Task1 from './task1/Task1'
+import Task2 from './task2/Task2'
 import './main.css'
 
 const theme = createTheme({
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/task1' element={<Task1 />}></Route>
+          <Route path='/task2' element={<Task2 />}></Route>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

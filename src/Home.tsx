@@ -26,7 +26,7 @@ const Home = () => {
         <ListItem>
           <Link to='/task2'>
             <Typography>
-              Task 2:
+              Task 2: Data fetching
             </Typography>
           </Link>
         </ListItem>

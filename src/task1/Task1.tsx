@@ -39,21 +39,7 @@ const Task1 = () => {
   return (
     <Layout>
       <Stack spacing={2}>
-        <Typography variant='h1'>
-          Task 1: List Filtering
-        </Typography>
-        <Typography variant='h2'>
-          Instructions
-        </Typography>
-        <Typography>
-          You are given a list of items (see <code>data</code>). You are to create a search bar
-          that filters the list of items based on the search query. The search should match
-          any part of the item based on a simple, case-insensitive sub-string match.
-        </Typography>
-        <Typography>
-          Implement the search functionality in the Textbox below. Render the list of items below
-          the Textbox as required.
-        </Typography>
+        <TaskDescription />
         <Divider />
         {/* IMPLEMENT JSX HERE (BEGIN) */}
         <TextField
@@ -64,6 +50,28 @@ const Task1 = () => {
         {/* IMPLEMENT JSX HERE (END) */}
       </Stack>
     </Layout>
+  )
+}
+
+const TaskDescription = () => {
+  return (
+    <>
+      <Typography variant='h1'>
+        Task 1: List Filtering
+      </Typography>
+      <Typography variant='h2'>
+        Instructions
+      </Typography>
+      <Typography>
+        You are given a list of items (see <code>data</code>). You are to create a search bar
+        that filters the list of items based on the search query. The search should match
+        any part of the item based on a simple, case-insensitive sub-string match.
+      </Typography>
+      <Typography>
+        Implement the search functionality in the Textbox below. Render the list of items below
+        the Textbox as required.
+      </Typography>
+    </>
   )
 }
 
